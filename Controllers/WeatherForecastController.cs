@@ -35,5 +35,10 @@ namespace WebAppSample.Controllers
             })
             .ToArray();
         }
+        [HttpGet]
+        public string Greating()
+        {
+            return "Hello dear!";
+        }
     }
 }
