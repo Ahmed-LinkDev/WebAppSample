@@ -35,7 +35,7 @@ namespace WebAppSample.Controllers
             })
             .ToArray();
         }
-        [HttpGet]
+        [HttpGet, Route("Greating/{name}", Name = "Greating")]
         public string Greating(string name)
         {
             return "Hello dear "+ name+"!";
