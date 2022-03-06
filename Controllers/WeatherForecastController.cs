@@ -36,9 +36,9 @@ namespace WebAppSample.Controllers
             .ToArray();
         }
         [HttpGet]
-        public string Greating()
+        public string Greating(string name)
         {
-            return "Hello dear!";
+            return "Hello dear "+ name+"!";
         }
     }
 }
